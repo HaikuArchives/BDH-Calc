@@ -35,8 +35,8 @@ private:
 	void enter();
 	void switch_keys();
 	
-	unsigned long long bdh_view::pwr2(unsigned long long power);
-	unsigned long long bdh_view::pwr10(unsigned long long power);
+	unsigned long long pwr2(unsigned long long power);
+	unsigned long long pwr10(unsigned long long power);
 	
 	BStringView *credits;
 	BButton *button[NUM_BUTTONS];

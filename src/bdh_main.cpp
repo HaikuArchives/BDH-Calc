@@ -41,7 +41,7 @@ void bdh_window::MessageReceived(BMessage *msg)
 {
 	//if (msg->what == BDHVIEW_UINT64)
 	//	beep();
-	inherited::MessageReceived(msg);
+	BWindow::MessageReceived(msg);
 }
 
 /****************************************************/
