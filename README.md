@@ -10,44 +10,34 @@ Fully functional 64 bit calculator that does standard arithmatic and logic on si
 ## Screenshot
 ![screenshot](https://github.com/nishanth1232/BDH-Calc/blob/master/images/screenshot.png)
 
-New in 1.1
----------------------------
-
-Updated spacing for Haiku to fit larger font sizes
-Select between Bin, Dec, Hex radio buttons via tab key navigation
-Backspace key deletes a single number
-Added about window accessed from right click context menu
-You can move the window on from any empty area
-
-
 Key explanations:
 ---------------------------
 
-C: clears the display and any previously entered numbers.  for example the sequence, 3 * 6 C, clears both the 6 and the 3 from memory.
+*C*: clears the display and any previously entered numbers.  for example the sequence, 3 * 6 C, clears both the 6 and the 3 from memory.
 
-Bin/Dec/Hex buttons: converts the display between these 3 different number bases- binary, decimal, and hexadecimal.  (Octal lovers should stay in the ocean =)
+*Bin/Dec/Hex buttons*: converts the display between these 3 different number bases- binary, decimal, and hexadecimal.  (Octal lovers should stay in the ocean =)
 
-signed/unsigned and word size popup:  Allows you to select what kind of numbers you want to compute with. uint64 is an unsigned long long (64 bits).  Likewise, int16 is a signed short (16 bits). etc.
+*Signed/unsigned and word size popup*:  Allows you to select what kind of numbers you want to compute with. uint64 is an unsigned long long (64 bits).  Likewise, int16 is a signed short (16 bits). etc.
 
-2X: this is actually "2 to the Xth power" .. standard BButtons have no way to actually display that other than 2X.  Someday Ill make a custom button to display it correctly.  usage:  5 2X produces 32, that is 2 to the 5th power is 32.  This is can be useful at times.. say you forget how many colors a 24bit color depth can display... enter 24 then hit 2X and you get 16777216.
+*2X*: this is actually "2 to the Xth power" .. standard BButtons have no way to actually display that other than 2X.  Someday Ill make a custom button to display it correctly.  usage:  5 2X produces 32, that is 2 to the 5th power is 32.  This is can be useful at times.. say you forget how many colors a 24bit color depth can display... enter 24 then hit 2X and you get 16777216.
 
-10X: same as above, 10 to the Xth power.  I had room for 2 extra buttons, so I added these two.
+*10X*: same as above, 10 to the Xth power.  I had room for 2 extra buttons, so I added these two.
 
-and: bitwise and.  5 and 3 = 1.  Only those bits that are the same in both numbers are left on.
+*and*: bitwise and.  5 and 3 = 1.  Only those bits that are the same in both numbers are left on.
 
-or: bitwise or.  5 or 3 = 7.  All on bits from both numbers are left on.
+*or*: bitwise or.  5 or 3 = 7.  All on bits from both numbers are left on.
 
-xor: bitwise xor.  5 xor 3 = 6.  Only bits that are on in one number, but not the other are left on.
+*xor*: bitwise xor.  5 xor 3 = 6.  Only bits that are on in one number, but not the other are left on.
 
-not: bitwise not.  5 not = 18446744073709551610.  Note that this depends on the WORD size!!!  All on bits are turned off, all off bits are turned on, thus 5 not not produces 5 again.  This is actually a special case xor.  
+*not*: bitwise not.  5 not = 18446744073709551610.  Note that this depends on the WORD size!!!  All on bits are turned off, all off bits are turned on, thus 5 not not produces 5 again.  This is actually a special case xor.  
 
-STO and RCL:  STORE and RECALL.  Allows you to access the 10 memory registers (numbers 0-9) example:  entering 5 STO 0, stores a 5 in register 0.  Also entering the sequence 5 + 2 = STO 9, saves a 7 in register 9.  Recall:  if you have 5 stored in register 1, entering "2 + RCL 1 =", produces 7.  Note, keyboard equvalents work for STO and RCL -- that is, clicking on STO then pressing the 3 key will store the current number in register 3. 
+*STO and RCL*:  STORE and RECALL.  Allows you to access the 10 memory registers (numbers 0-9) example:  entering 5 STO 0, stores a 5 in register 0.  Also entering the sequence 5 + 2 = STO 9, saves a 7 in register 9.  Recall:  if you have 5 stored in register 1, entering "2 + RCL 1 =", produces 7.  Note, keyboard equvalents work for STO and RCL -- that is, clicking on STO then pressing the 3 key will store the current number in register 3. 
 
-shl, shr:  Left and Right bitwise shifts.  This basically multiplies (left) and divides (right) a number by 2.  Ex:  5 shl becomes 10.  Note: no remainder... thus 5 shr becomes 2.
+*shl, shr*:  Left and Right bitwise shifts.  This basically multiplies (left) and divides (right) a number by 2.  Ex:  5 shl becomes 10.  Note: no remainder... thus 5 shr becomes 2.
 
-rol, ror: Left and Right bitwise rotation.  Similar to shifts, although no bits are lost, they are simply tacked on to the other side, thus this depends on the WORD size again!  Ex: in a 64 bit word size, 1 shr becomes 0, while 1 ror becomes 9223372036854775808.  Assembly language note: these instructions are the same as rol and ror from x86 assembly, they are not rotate though carry, i.e. rcl and rcr.
+*rol, ror*: Left and Right bitwise rotation.  Similar to shifts, although no bits are lost, they are simply tacked on to the other side, thus this depends on the WORD size again!  Ex: in a 64 bit word size, 1 shr becomes 0, while 1 ror becomes 9223372036854775808.  Assembly language note: these instructions are the same as rol and ror from x86 assembly, they are not rotate though carry, i.e. rcl and rcr.
 
-mod:  modulus.  This is the remainer from division.  examples: 11 mod 3 = 2,  11 mod 5 = 1, 11 mod 6 = 5, etc.
+*mod*:  modulus.  This is the remainer from division.  examples: 11 mod 3 = 2,  11 mod 5 = 1, 11 mod 6 = 5, etc.
 
 
 Keyboard equivalents:
