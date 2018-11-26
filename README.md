@@ -1,15 +1,5 @@
 # BDH-Calc
-         File: BDH Calc
-       Author: Scott Hammond
-      Release: 1.1     
-      
-Compatibility: R4 x86, R5 x86, Haiku R1 x86
-
-  Description:  64bit programmer's calculator 
-  
-     Location:
-     
-        Notes: 
+  by Scott Hammond
 
 Fully functional 64 bit calculator that does standard arithmatic and logic on signed and unsigned integers. 
 ## Features
