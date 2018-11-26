@@ -113,10 +113,6 @@ cos, acos,
 tan, atan.
 Of couse, all FP calculations will use 64 bit doubles.
 
-
-In closing:
---------------
-
 Let me know how you like this, if its useful, if it can be improved or the user interface changed in any way.
 
 http://www.mindspring.net/~sehammond/beos.html
