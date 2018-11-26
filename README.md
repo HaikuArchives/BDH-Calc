@@ -41,17 +41,17 @@ Fully functional 64 bit calculator that does standard arithmatic and logic on si
 
 ## Keyboard equivalents
 
-0-9, A-F, a-f   -- numbers
+*0-9*, *A-F*, *a-f*   -- Numbers
 
-+, -, *, /, %  -- plus, minus, times, divide, modulus
++, -, *, /, %  -- Plus, minus, times, divide, modulus
 
-&, |, !, ^ -- and, or, not, xor
+&, |, !, ^ -- And, or, not, xor
 
-delete -- clear
+delete -- Clear
 
-=, enter --  equal and enter do the same thing.
+=, enter --  Equal and enter do the same thing.
 
-command (alt) C  will copy the output to the clipboard
+Command (alt) C  will copy the output to the clipboard.
 
 There are no keyboard equivalents for left and right shift and rotates, 2 to the X, 10 to the X, and binary/decimal/hexadecimal buttons.
 
