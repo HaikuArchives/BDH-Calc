@@ -10,8 +10,7 @@ Fully functional 64 bit calculator that does standard arithmatic and logic on si
 ## Screenshot
 ![screenshot](https://github.com/nishanth1232/BDH-Calc/blob/master/images/screenshot.png)
 
-Key explanations:
----------------------------
+## Key explanations
 
 *C*: Clears the display and any previously entered numbers. For example, the sequence, 3 * 6 C, clears both the 6 and the 3 from memory.
 
@@ -40,8 +39,8 @@ Key explanations:
 *mod*: Modulus. This is the remainer from division. Examples: 11 mod 3 = 2,  11 mod 5 = 1, 11 mod 6 = 5, etc.
 
 
-Keyboard equivalents:
-----------------------------------
+## Keyboard equivalents
+
 0-9, A-F, a-f   -- numbers
 
 +, -, *, /, %  -- plus, minus, times, divide, modulus
@@ -58,14 +57,14 @@ There are no keyboard equivalents for left and right shift and rotates, 2 to the
 
 
 
-Notes:
----------
+## Notes
+
 You can chain together functions, but there is no precidence checking.. eg 2 + 3 * 4 =  results in 20, not 14.
 
-When you are using a large word size, 64 or 32, the NOT button is pretty useless.. not 7 in uint64 mode, and you get 18446744073709551608!  not 7 in uint8 mode is 248 -- probably the result that you were looking for.  TRICK: NOT 0 to get the largest number than the current word size can produce -- 18446744073709551615 for 64bit, 4294967295 for 32 bit, 65535 for 16 bit, etc.
+When you are using a large word size, 64 or 32, the NOT button is pretty useless.. not 7 in uint64 mode, and you get 18446744073709551608!. Not 7 in uint8 mode is 248 -- probably the result that you were looking for.  TRICK: NOT 0 to get the largest number than the current word size can produce -- 18446744073709551615 for 64bit, 4294967295 for 32 bit, 65535 for 16 bit, etc.
 
 IMPORTANT!
-not, left and right shifts and rotates, the +/- key,  2 to the X, 10 to the X, STORE and RECALL keys are non-invalidating operations!  That is, they modify the number that is displayed without entering it into memory.
+Not, left and right shifts and rotates, the +/- key,  2 to the X, 10 to the X, STORE and RECALL keys are non-invalidating operations!  That is, they modify the number that is displayed without entering it into memory.
 Examples:
 This sequence: 5 * 3 shr =   produces 5, not 7! (the shr operation does not enter the 3, it shifts it right once to produce 1, and when you hit =, 5 * 1 is 5).
 The sequence: 1 2 STO 3 4 leaves you with 124 as the number displayed, and 12 stored in register #3.  Entering the sequence 1 (+/-) 2 (+/-) 3 (+/-) produces -123.
@@ -75,24 +74,24 @@ Entering the sequence 1 + 2 = (+/-) * 5 =   produces -15.
 TO DO:
 -----------
 
-a fix for the hidden high long word in 64 bit binary mode.
+A fix for the hidden high long word in 64 bit binary mode.
 
-replication replication replication.
+Replication replication replication.
 
-floating point support.  Youll notice that FP is in the popupmenu -- I already have FP functions decided upon, I just need to get it done.  They are:
-e to the x,
-ln x,
-1/x,
-log x,
-10 to the x (same as the integer funcion.. now you know why its there),
-2 to the x (ditto),
-square root,
-y to the x,
-PI,
-a degrees to radians button,
-sin, asin,
-cos, acos,
-tan, atan.
+Floating point support. You'll notice that FP is in the popupmenu -- I already have FP functions decided upon, I just need to get it done. They are:
+*e to the x*,
+*ln x*,
+*1/x*,
+*log x*,
+*10 to the x* (same as the integer funcion.. now you know why its there),
+*2 to the x* (ditto),
+*square root*,
+*y to the x*,
+*PI*,
+*a degrees to radians button*,
+*sin*, *asin*,
+*cos*, *acos*,
+*tan*, *atan*.
 Of couse, all FP calculations will use 64 bit doubles.
 
 Let me know how you like this, if its useful, if it can be improved or the user interface changed in any way.
