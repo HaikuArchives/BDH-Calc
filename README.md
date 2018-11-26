@@ -69,5 +69,3 @@ The sequence: 1 2 STO 3 4 leaves you with 124 as the number displayed, and 12 st
 Entering the sequence 1 + 2 = (+/-) * 5 =   produces -15.
 
 Let me know how you like this, if its useful, if it can be improved or the user interface changed in any way.
-
-seh1@acpub.duke.edu
