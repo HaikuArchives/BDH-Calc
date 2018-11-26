@@ -3,7 +3,9 @@
 
 Fully functional 64 bit calculator that does standard arithmatic and logic on signed and unsigned integers. 
 ## Features
-Selectable word size from 8 to 64 bits; binary, decimal, and hexadecimal converstion (its namesake); 10 memory registers; small screen footprint so it doesnt get in the way.  Standard keyboard equivalents work, and the user can copy the display (command-C).  Source is included.  Drop this in your Apps folder, or put it on your desktop for quick access.
+* Selectable word size from 8 to 64 bits; binary, decimal, and hexadecimal converstion (its namesake)
+* 10 memory registers
+* Small screen footprint so it doesnt get in the way 
 
 ## Screenshot
 ![screenshot](https://github.com/nishanth1232/BDH-Calc/blob/master/images/screenshot.png)
