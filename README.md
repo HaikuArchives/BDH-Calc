@@ -70,7 +70,4 @@ Entering the sequence 1 + 2 = (+/-) * 5 =   produces -15.
 
 Let me know how you like this, if its useful, if it can be improved or the user interface changed in any way.
 
-http://www.mindspring.net/~sehammond/beos.html
-
-sehammond@mindspring.com
 seh1@acpub.duke.edu
