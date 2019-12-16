@@ -8,7 +8,7 @@ Fully functional 64 bit calculator that does standard arithmatic and logic on si
 * Small screen footprint so it doesnt get in the way 
 
 ## Screenshot
-![screenshot](https://github.com/nishanth1232/BDH-Calc/blob/master/images/screenshot.png)
+![screenshot](./images/screenshot.png)
 
 ## Key explanations
 
